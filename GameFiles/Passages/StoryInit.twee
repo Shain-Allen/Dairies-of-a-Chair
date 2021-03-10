@@ -1,0 +1,20 @@
+:: StoryInit
+<<set $name to "string">>
+<<set $durability to 100>>
+<<set $health to $Durability>>
+<<set $buttPower to 10>>
+<<set $popularity to 5>>
+
+<<set $daysOfWeek to new Array("monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday")>>
+<<set $dayIndex to 0>>
+<<set $currentDay to $daysOfWeek[$dayIndex]>>
+
+<<set $currentRoom>>
+<<set $roomPlan to []>>
+<<set $maxRooms to 5>>
+
+<<set $vistedGuru to false>>
+<<set $firstArival to false>>
+
+<<cacheaudio "mainbackground" "Sounds/BackgroundMusic.wav">>
+<<cacheaudio "AffirmativeChairSqueak" "Sounds/AffirmativeChairSqueak.wav">>
