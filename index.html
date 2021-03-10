@@ -100,7 +100,17 @@ var saveAs=saveAs||navigator.msSaveBlob&&navigator.msSaveBlob.bind(navigator)||f
 		<div id="init-lacking">Your browser lacks required capabilities. Please upgrade it or switch to another to continue.</div>
 		<div id="init-loading"><div>Loading&hellip;</div></div>
 	</div>
-	<!-- UUID://AB0C7418-1027-44FB-8E73-1D9A2FACAA75// --><tw-storydata name="Diaries of a Chair" startnode="1" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="AB0C7418-1027-44FB-8E73-1D9A2FACAA75" zoom="1" format="SugarCube" format-version="2.30.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript">/* twine-user-script #1: "Sitter.js" */
+	<!-- UUID://AB0C7418-1027-44FB-8E73-1D9A2FACAA75// --><tw-storydata name="Diaries of a Chair" startnode="1" creator="Tweego" creator-version="2.1.1+81d1d71" ifid="AB0C7418-1027-44FB-8E73-1D9A2FACAA75" zoom="1" format="SugarCube" format-version="2.30.0" options="" hidden><style role="stylesheet" id="twine-user-stylesheet" type="text/twine-css"></style><script role="script" id="twine-user-script" type="text/twine-javascript">/* twine-user-script #1: "ImageAutoLoad.js" */
+(function () {
+    var preload = ["ENVIORNMENT/Art_Room.png", "ENVIORNMENT/Cafeteria.png", "ENVIORNMENT/Gym.png", "ENVIORNMENT/Classroom.png"];
+
+    window._ImageCache = preload.map(function (url) {
+        var image = document.createElement('img');
+        image.src = url;
+        return image;
+    });
+})();
+/* twine-user-script #2: "Sitter.js" */
 window.Sitter = function (name, dirty, cushionDamg, buttPow) {
     this.name = name || '';
     this.dirty = dirty || '';
@@ -127,7 +137,7 @@ Sitter.prototype.toJSON = function () {
     }, this);
     return JSON.reviveWrapper('(new Sitter())._init($ReviveData$', owndata);
 };
-/* twine-user-script #2: "StoryControl.js" */
+/* twine-user-script #3: "StoryControl.js" */
 $('#ui-bar').remove();
 $(document.head).find('#style-ui-bar').remove();</script><tw-passagedata pid="1" name="Application" tags="" position="100,100" size="100,100">You find yourself gazing at a paper covered in lots of blanks and small writing. The top of the page states “Application”.  I suppose you’re required to fill this out.</tw-passagedata><tw-passagedata pid="2" name="StoryInit" tags="" position="225,100" size="100,100">&lt;&lt;set $name to &quot;string&quot;&gt;&gt;
 &lt;&lt;set $durability to 100&gt;&gt;
