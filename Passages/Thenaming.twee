@@ -1,0 +1,10 @@
+:: The naming
+You begin to read down the page,
+
+Your Name: <<textbox "$name" "" [[GuruIntroduction]]>>
+
+
+<<set $kid to new Sitter('kid','50','5','1')>>
+<<set $pre_teen to new Sitter('pre teen','40','15','3')>>
+<<set $teen to new Sitter('teen','30','30','4')>>
+<<set $adult to new Sitter('adult','15','50','5')>>

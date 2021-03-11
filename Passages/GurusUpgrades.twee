@@ -1,0 +1,13 @@
+:: GurusUpgrades
+<<if $vistedGuru == false>>As you make your way into the janitors closet you find to your surprise the chair guru is awake and humming a little song to himself. 
+
+“Ahhhhh, welcome back young one. You’ve managed to persevere through the week. You look a little scuffed up. Would you like any upgrades? Maybe a scrub down? Can’t really let you leave here lookin like that.”
+<<set $vistedGuru to true>><</if>>
+
+<<nobr>>
+	<div class = "grid-container">
+		<div class = "grid-item"><<button [[Upgrades|UpgradeCenter]]>><</button>></div>
+		<div class = "grid-item"><<button [[Get cleaning|Clearners]]>><</button>></div>
+		<div class = "grid-item"><<button [[Go back the storage closet|Homebase]]>><</button>></div>
+	</div> 
+<</nobr>> 

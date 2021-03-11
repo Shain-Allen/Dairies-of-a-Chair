@@ -1,0 +1,17 @@
+:: Elementary
+<<if $roomPlan.length > 0>>
+	<<set _nextroom to $roomPlan[0]>>
+	<<set $roomPlan.shift()>>
+	<<set $currentDay to $daysOfWeek[$dayIndex]>>
+	<<goto _nextroom>>
+<<elseif $roomPlan.length == 0 && $vistedGuru == true>>
+	<<set dayIndex to 5>>
+	<<set $currentDay to $daysOfWeek[$dayIndex]>>
+	<<goto [[Homebase]]>>
+<<else>>	
+	<<set dayIndex to 5>>
+	<<set $currentDay to $daysOfWeek[$dayIndex]>>
+	<<goto [[GurusUpgrades]]>>
+<</if>>
+
+<<set $firstArival to true>>

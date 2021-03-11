@@ -1,0 +1,14 @@
+:: GuruIntroduction
+You come to fruition of where you are, you currently reside in a dark room you’re unfamiliar with. Looking around you see a straggly old looking chair sitting in the corner. Part of you is wondering if he is dead or not. He begins to stir and makes a loud squeak that startles you. 
+
+“You must be new here. Forgive an old geezer like me, being here for 94 years you’ve seen it all and it begins to blend together. I lose myself in it and just start to doze off. 
+
+Anyways welcome, it's currently quiet out there, but watch yourself. The humans tend to make some noise during the day. When they’re gone gather resources where you can. You’ll find different rooms have different materials. When you need a good scrub down or an upgrade, come to me. You don't want to get too dirty or uncomfortable otherwise, they tend to throw you to the side if they don’t find you in tip top shape.”
+
+This is a lot of information, and you’re a bit confused. 
+
+“Oh, you want people to sit on you as much as possible, the more the merrier they say. It’ll be difficult for you to go in search of any resources at night without any of that movement power too. While you spend your time here, you can get cozy in the storage closet down the hall. You’ll find it a bit barren, but other than that it's not too shabby. I think that's all you really need to know. I’m settin you free now. Wishin you luck $name”
+
+With that he sends you on your way.
+
+<<button [[Get going|Homebase]]>><</button>>

@@ -1,0 +1,25 @@
+:: UpgradeCenter
+The guru looks at you and waits for you to present the resources you’ve gathered from the week. 
+
+“Well, whatcha got for me?” He waits in a puzzle, staring you down.
+
+You pull out all of the pieces you’ve gathered throughout your week's journey. You’ve managed to find, 
+(put in a fill for items gathered for the week). 
+
+“Not too bad! And I had my doubts, but you’ve proven me wrong! Alright, look here. This is what I have available for you today. What seems to peak your interest?”
+
+He presents to you the upgrades that are potentially available to you.
+
+<<nobr>>
+	<div class = "grid-container">
+		<div class = "grid-item"> <<button [[Legs]]>><</button>> </div>
+		<div class = "grid-item"> <<button [[Spare Wheel]]>><</button>> </div>
+		<div class = "grid-item"> <<button [[Arm Rests]]>><</button>> </div>
+		<div class = "grid-item"> <<button text>><</button>> </div>
+		<div class = "grid-item"> <<button text>><</button>> </div>
+		<div class = "grid-item"> <<button text>><</button>> </div>
+		<div class = "grid-item"> <<button text>><</button>> </div>
+	</div>
+<</nobr>>
+
+<<button [[Gurus upgrades|GurusUpgrades]] >><</button>> 
