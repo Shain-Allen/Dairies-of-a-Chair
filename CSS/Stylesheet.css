@@ -1,0 +1,26 @@
+body {
+    color: #DAA520;
+    font-family: Futura, Impact, Helvetica, sans-serif;
+    font-size: 150%;
+  }
+  
+  button {
+    background-color:green;
+    font-weight:200;
+    border-color: green;
+  }
+  
+  .ButtonCentered {
+    position: fixed;
+    left: 45%;
+  }
+  
+  .grid-container{
+    display: grid;
+    grid-template-columns: 4;
+    justify-content: start;
+  }
+  
+  .grid-item{
+    margin:3px;
+  }
