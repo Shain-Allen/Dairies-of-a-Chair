@@ -1,4 +1,4 @@
-:: Week Planner
+:: Week Planner {"position":"1000,600"}
 Where would you like to spend the week? (Pick up to three different rooms for the 5 days of the school week)
 <<nobr>>
 	<div class = "grid-container">

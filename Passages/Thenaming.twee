@@ -1,4 +1,4 @@
-:: The naming
+:: The naming {"position":"1000,175"}
 You begin to read down the page,
 
 Your Name: <<textbox "$name" "" [[GuruIntroduction]]>>

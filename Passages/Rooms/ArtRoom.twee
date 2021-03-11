@@ -1,4 +1,4 @@
-:: Art Room
+:: Art Room {"position":"800,800"}
 <style>
 html { 
   background: url(ENVIORNMENT/Art_Room.png) no-repeat center center fixed; 

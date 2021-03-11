@@ -1,4 +1,4 @@
-:: StoryInit
+:: StoryInit {"position":"500,0"}
 <<set $name to "string">>
 <<set $durability to 100>>
 <<set $health to $Durability>>

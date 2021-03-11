@@ -1,4 +1,4 @@
-:: Application
+:: Application {"position":"1000,0"}
 You find yourself gazing at a paper covered in lots of blanks and small writing. The top of the page states “Application”. I suppose you’re required to fill this out.
 
 <div class = "ButtonCentered"><<button [[Fill out application|The naming]]>><</button>></div>

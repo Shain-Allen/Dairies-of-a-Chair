@@ -1,4 +1,4 @@
-:: Cafeteria
+:: Cafeteria {"position":"600,800"}
 <style>
 html { 
   background: url(ENVIORNMENT/Cafeteria.png) no-repeat center center fixed; 
