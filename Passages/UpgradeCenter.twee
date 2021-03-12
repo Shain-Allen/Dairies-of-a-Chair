@@ -15,10 +15,6 @@ He presents to you the upgrades that are potentially available to you.
 		<div class = "grid-item"> <<button [[Legs]]>><</button>> </div>
 		<div class = "grid-item"> <<button [[Spare Wheel]]>><</button>> </div>
 		<div class = "grid-item"> <<button [[Arm Rests]]>><</button>> </div>
-		<div class = "grid-item"> <<button text>><</button>> </div>
-		<div class = "grid-item"> <<button text>><</button>> </div>
-		<div class = "grid-item"> <<button text>><</button>> </div>
-		<div class = "grid-item"> <<button text>><</button>> </div>
 	</div>
 <</nobr>>
 

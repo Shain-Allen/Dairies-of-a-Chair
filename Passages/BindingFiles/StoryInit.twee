@@ -21,9 +21,12 @@
 <<set $firstArival to false>>
 
 //upgrades
-<<set $hasWheel to flase>>
+<<set $hasWheels to false>>
 <<set $hasLegs to false>>
 <<set $hasArmRests to false>>
+
+//resorces
+
 
 //audio
 <<cacheaudio "mainbackground" "Sounds/BackgroundMusic.wav">>
