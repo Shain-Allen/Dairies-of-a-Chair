@@ -57,7 +57,7 @@ Where would you like to spend the week? (Pick up to three different rooms for th
 	</div>
 <</nobr>>
 
-current plan: $roomPlan
+current plan for the week: $roomPlan
 
 <div class = "grid-item">
 	<<button [[Remove last Location|Week Planner]]>> 
@@ -66,5 +66,5 @@ current plan: $roomPlan
 		<</if>>
 	<</button>>
 </div> 
-<<button [[Back to base|Homebase]]>> <<set $roomPlan to []>> <</button>> 
-<div class = "grid-item"><<button [[Execute plan|Elementary]]>><<silently>><<set $dayIndex to 0>><</silently>><</button>></div>  
+<<button [[Back to base|Homebase]]>> <<set $roomPlan to []>> <</button>>
+<<if $roomPlan.length > 0>><div class = "grid-item"><<button [[Execute plan|Elementary]]>><<silently>><<set $dayIndex to 0>><</silently>><</button>></div><</if>> 
