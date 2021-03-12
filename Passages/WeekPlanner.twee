@@ -3,18 +3,68 @@ Where would you like to spend the week? (Pick up to three different rooms for th
 <<nobr>>
 	<div class = "grid-container">
 		<div class = "grid-item">
-			<<button [[Classroom|Week Planner]]>><<silently>> <<if $roomPlan.length < $maxRooms >> <<set $roomPlan.push("Classroom")>> <</if>> <</silently>><</button>>
-			<<button [[Cafeteria|Week Planner]]>><<silently>> <<if $roomPlan.length < $maxRooms >> <<set $roomPlan.push("Cafeteria")>> <</if>> <</silently>><</button>> 
+			<<button [[Classroom|Week Planner]]>>
+				<<silently>> 
+					<<if $roomPlan.length < $maxRooms >> 
+						<<if $roomPlan.indexOf("Classroom") != -1>>
+							<<set $roomPlan.push("Classroom")>>
+						<<elseif $roomPlan.length == 0 || $roomTypes < $typeMax>>>
+							<<set $roomPlan.push("Classroom")>>
+							<<set $roomTypes to $roomTypes + 1>>
+						<</if>> 
+					<</if>> 
+				<</silently>>
+			<</button>>
+			<<button [[Cafeteria|Week Planner]]>>
+				<<silently>> 
+					<<if $roomPlan.length < $maxRooms >> 
+						<<if $roomPlan.indexOf("Cafeteria") != -1>>
+							<<set $roomPlan.push("Cafeteria")>>
+						<<elseif $roomPlan.length == 0 || $roomTypes < $typeMax>>>
+							<<set $roomPlan.push("Cafeteria")>>
+							<<set $roomTypes to $roomTypes + 1>>
+						<</if>> 
+					<</if>>  
+				<</silently>>
+			<</button>> 
 		</div>
 		<div class = "grid-item">
-			<<button [[Art Room|Week Planner]]>><<silently>> <<if $roomPlan.length < $maxRooms >> <<set $roomPlan.push("Art Room")>> <</if>> <</silently>><</button>>
-			<<button [[Gym|Week Planner]]>><<silently>> <<if $roomPlan.length < $maxRooms >> <<set $roomPlan.push("Gym")>> <</if>> <</silently>><</button>> 
+			<<button [[Art Room|Week Planner]]>>
+				<<silently>> 
+					<<if $roomPlan.length < $maxRooms >> 
+						<<if $roomPlan.indexOf("Art Room") != -1>>
+							<<set $roomPlan.push("Art Room")>>
+						<<elseif $roomPlan.length == 0 || $roomTypes < $typeMax>>>
+							<<set $roomPlan.push("Art Room")>>
+							<<set $roomTypes to $roomTypes + 1>>
+						<</if>> 
+					<</if>>
+				<</silently>>
+			<</button>>
+			<<button [[Gym|Week Planner]]>>
+				<<silently>> 
+					<<if $roomPlan.length < $maxRooms >> 
+						<<if $roomPlan.indexOf("Gym") != -1>>
+							<<set $roomPlan.push("Gym")>>
+						<<elseif $roomPlan.length == 0 || $roomTypes < $typeMax>>>
+							<<set $roomPlan.push("Gym")>>
+							<<set $roomTypes to $roomTypes + 1>>
+						<</if>> 
+					<</if>>
+				<</silently>>
+			<</button>> 
 		</div>
 	</div>
 <</nobr>>
 
 current plan: $roomPlan
 
-<div class = "grid-item"><<button [[Remove last Location|Week Planner]]>> <<set $roomPlan.pop()>> <</button>></div> 
+<div class = "grid-item">
+	<<button [[Remove last Location|Week Planner]]>> 
+		<<if $roomPlan.count($roomPlan.pop()) == 0 && $roomTypes != 0>>
+			<<set $roomTypes to $roomTypes - 1>>
+		<</if>>
+	<</button>>
+</div> 
 <<button [[Back to base|Homebase]]>> <<set $roomPlan to []>> <</button>> 
 <div class = "grid-item"><<button [[Execute plan|Elementary]]>><<silently>><<set $dayIndex to 0>><</silently>><</button>></div>  

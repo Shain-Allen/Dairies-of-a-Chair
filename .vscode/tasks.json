@@ -6,7 +6,7 @@
         {
             "label": "Tweego",
             "type": "shell",
-            "command": "Tweego -o index.html Passages Javascript CSS",
+            "command": "Tweego -t -o index.html Passages Javascript CSS",
             "problemMatcher": [],
             "group": {
                 "kind": "build",

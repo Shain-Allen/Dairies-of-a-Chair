@@ -15,6 +15,9 @@
 <<set $currentRoom>>
 <<set $roomPlan to []>>
 <<set $maxRooms to 5>>
+<<set $roomTypes to 0>>
+<<set $typeMax to 3>>
+
 
 //flow control
 <<set $vistedGuru to false>>
