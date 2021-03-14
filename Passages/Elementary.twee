@@ -15,3 +15,35 @@
 <</if>>
 
 <<set $firstArival to true>>
+
+<<if $makeMats == true>>
+	<<set $classroomMats to {
+    wood: random($classroomMatsMax.wood),
+    plastic: 0,
+    spareWheel: 0,
+    paint: 0
+}>>
+
+<<set $cafeteriaMat to {
+    wood: 0,
+    plastic: random($cafeteriaMatMax.plastic),
+    spareWheel: 0,
+    paint: 0
+}>>
+
+<<set $gymMat to {
+    wood: 0,
+    plastic: 0,
+    spareWheel: random($gymMatMax.spareWheel),
+    paint: 0
+}>>
+
+<<set $artMat to {
+    wood: 0,
+    plastic: 0,
+    spareWheel: 0,
+    paint: random($artMatMax)
+}>>
+
+<<set $makeMats to false>>
+<</if>>

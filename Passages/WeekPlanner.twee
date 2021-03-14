@@ -67,4 +67,5 @@ current plan for the week: $roomPlan
 	<</button>>
 </div> 
 <<button [[Back to base|Homebase]]>> <<set $roomPlan to []>> <</button>>
-<<if $roomPlan.length > 0>><div class = "grid-item"><<button [[Execute plan|Elementary]]>><<silently>><<set $dayIndex to 0>><</silently>><</button>></div><</if>> 
+<<if $roomPlan.length > 0>><div class = "grid-item"><<button [[Execute plan|Elementary]]>><<silently>><<set $dayIndex to 0>><<set $makeMats to true>><</silently>><</button>></div><</if>>
+

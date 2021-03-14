@@ -6,6 +6,14 @@
 <<set $buttPower to 10>>
 <<set $popularity to 5>>
 
+//player inventory
+<<set $playerInv to {
+    wood: 0,
+    plastic: 0,
+    spareWheel: 0,
+    paint: 0
+}>>
+
 //week stuff
 <<set $daysOfWeek to new Array("monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday")>>
 <<set $dayIndex to 0>>
@@ -18,6 +26,8 @@
 <<set $roomTypes to 0>>
 <<set $typeMax to 3>>
 
+//room resorce control
+<<set $makeMats to true>>
 
 //flow control
 <<set $vistedGuru to false>>
@@ -29,7 +39,63 @@
 <<set $hasArmRests to false>>
 
 //resorces
+    //max to find
+<<set $classroomMatMax to {
+    wood: 10,
+    plastic: 0,
+    spareWheel: 0,
+    paint: 0
+}>>
 
+<<set $cafeteriaMatMax to {
+    wood: 0,
+    plastic: 10,
+    spareWheel: 0,
+    paint: 0
+}>>
+
+<<set $gymMatMax to {
+    wood: 0,
+    plastic: 0,
+    spareWheel: 4,
+    paint: 0
+}>>
+
+<<set $artMatMax to {
+    wood: 0,
+    plastic: 0,
+    spareWheel: 0,
+    paint: 0
+}>>
+
+//resorces in rooms
+<<set $classroomMats to {
+    wood: 0,
+    plastic: 0,
+    spareWheel: 0,
+    paint: 0
+}>>
+
+<<set $cafeteriaMat to {
+    wood: 0,
+    plastic: 0,
+    spareWheel: 0,
+    paint: 0
+}>>
+
+<<set $gymMat to {
+    wood: 0,
+    plastic: 0,
+    spareWheel: 0,
+    paint: 0
+}>>
+
+<<set $artMat to {
+    wood: 0,
+    plastic: 0,
+    spareWheel: 0,
+    paint: 0
+}>>
 
 //audio
 <<cacheaudio "mainbackground" "Sounds/BackgroundMusic.wav">>
