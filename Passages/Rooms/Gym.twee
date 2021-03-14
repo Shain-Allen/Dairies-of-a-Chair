@@ -15,6 +15,31 @@ body {
 you are in the Gym
 current plan: $roomPlan
 current day: $currentDay
+<<silently>>
+<<set _foundMats to {
+  wood: random($gymMats.wood),
+  plastic: random($gymMats.plastic),
+  spareWheel: random($gymMats.spareWheel),
+  paint: random($gymMats.paint)
+}>>
 
+<<set $playerInv to {
+  wood: $playerInv.wood + _foundMats.wood,
+  plastic: $playerInv.plastic + _foundMats.plastic,
+  spareWheel: $playerInv.spareWheel + _foundMats.spareWheel,
+  paint: $playerInv.paint + _foundMats.paint
+}>>
+
+<<set $artMats to {
+  wood: $gymMats.wood - _foundMats.wood,
+  plastic: $gymMats.plastic - _foundMats.plastic,
+  spareWheel: $gymMats.spareWheel - _foundMats.spareWheel,
+  paint: $gymMats.paint - _foundMats.paint
+}>>
+<</silently>>
+found wood: _foundMats.wood
+found plastic: _foundMats.plastic
+found spareWheel: _foundMats.spareWheel
+found paint: _foundMats.paint
 <<set $dayIndex = $dayIndex + 1>>
 <<timed 4s>><<goto [[Elementary]]>><</timed>>

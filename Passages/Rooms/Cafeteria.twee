@@ -15,6 +15,31 @@ body {
 you are in the Cafeteria
 current plan: $roomPlan
 current day: $currentDay
+<<silently>>
+<<set _foundMats to {
+  wood: random($cafeteriaMats.wood),
+  plastic: random($cafeteriaMats.plastic),
+  spareWheel: random($cafeteriaMats.spareWheel),
+  paint: random($cafeteriaMats.paint)
+}>>
 
+<<set $playerInv to {
+  wood: $playerInv.wood + _foundMats.wood,
+  plastic: $playerInv.plastic + _foundMats.plastic,
+  spareWheel: $playerInv.spareWheel + _foundMats.spareWheel,
+  paint: $playerInv.paint + _foundMats.paint
+}>>
+
+<<set $artMats to {
+  wood: $cafeteriaMats.wood - _foundMats.wood,
+  plastic: $cafeteriaMats.plastic - _foundMats.plastic,
+  spareWheel: $cafeteriaMats.spareWheel - _foundMats.spareWheel,
+  paint: $cafeteriaMats.paint - _foundMats.paint
+}>>
+<</silently>>
+found wood: _foundMats.wood
+found plastic: _foundMats.plastic
+found spareWheel: _foundMats.spareWheel
+found paint: _foundMats.paint
 <<set $dayIndex = $dayIndex + 1>>
 <<timed 4s>><<goto [[Elementary]]>><</timed>>

@@ -14,6 +14,31 @@
 you are in the Art Room
 current plan: $roomPlan
 current day: $currentDay
+<<silently>>
+<<set _foundMats to {
+  wood: random($artMats.wood),
+  plastic: random($artMats.plastic),
+  spareWheel: random($artMats.spareWheel),
+  paint: random($artMats.paint)
+}>>
 
+<<set $playerInv to {
+  wood: $playerInv.wood + _foundMats.wood,
+  plastic: $playerInv.plastic + _foundMats.plastic,
+  spareWheel: $playerInv.spareWheel + _foundMats.spareWheel,
+  paint: $playerInv.paint + _foundMats.paint
+}>>
+
+<<set $artMats to {
+  wood: $artMats.wood - _foundMats.wood,
+  plastic: $artMats.plastic - _foundMats.plastic,
+  spareWheel: $artMats.spareWheel - _foundMats.spareWheel,
+  paint: $artMats.paint - _foundMats.paint
+}>>
+<</silently>>
+found wood: _foundMats.wood
+found plastic: _foundMats.plastic
+found spareWheel: _foundMats.spareWheel
+found paint: _foundMats.paint
 <<set $dayIndex = $dayIndex + 1>>
 <<timed 4s>><<goto [[Elementary]]>><</timed>>

@@ -7,21 +7,21 @@
 		paint: 0
 	}>>
 
-	<<set $cafeteriaMat to {
+	<<set $cafeteriaMats to {
 		wood: 0,
 		plastic: random($cafeteriaMatMax.plastic),
 		spareWheel: 0,
 		paint: 0
 	}>>
 
-	<<set $gymMat to {
+	<<set $gymMats to {
 		wood: 0,
 		plastic: 0,
 		spareWheel: random($gymMatMax.spareWheel),
 		paint: 0
 	}>>
 
-	<<set $artMat to {
+	<<set $artMats to {
 		wood: 0,
 		plastic: 0,
 		spareWheel: 0,
