@@ -57,7 +57,7 @@ Where would you like to spend the week? (Pick up to three different rooms for th
 	</div>
 <</nobr>>
 
-current plan for the week: $roomPlan
+current plan for the week (monday -> friday): $roomPlan
 
 <div class = "grid-item">
 	<<button [[Remove last Location|Week Planner]]>> 

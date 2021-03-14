@@ -1,16 +1,15 @@
 :: Art Room {"position":"800,800"}
 <style>
-html { 
-  background: url(ENVIORNMENT/Art_Room.png) no-repeat center center fixed; 
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-body { 
-    background-color: transparent;
-}
+  html { 
+    background: url(ENVIORNMENT/Art_Room.png) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+  body { 
+      background-color: transparent;
+  }
 </style> 
 you are in the Art Room
 current plan: $roomPlan
