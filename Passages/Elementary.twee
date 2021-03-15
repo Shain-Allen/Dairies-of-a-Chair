@@ -1,7 +1,7 @@
 :: Elementary {"position":"1000,900"}
-<<if $makeMats == true>>
+/*<<if $makeMats == true>>*/
 		<<set $classroomMats to {
-		wood: random($classroomMatsMax.wood),
+		wood: random(1, $classroomMatsMax.wood),
 		plastic: 0,
 		spareWheel: 0,
 		paint: 0
@@ -9,7 +9,7 @@
 
 	<<set $cafeteriaMats to {
 		wood: 0,
-		plastic: random($cafeteriaMatMax.plastic),
+		plastic: random(1, $cafeteriaMatMax.plastic),
 		spareWheel: 0,
 		paint: 0
 	}>>
@@ -17,7 +17,7 @@
 	<<set $gymMats to {
 		wood: 0,
 		plastic: 0,
-		spareWheel: random($gymMatMax.spareWheel),
+		spareWheel: random(1, $gymMatMax.spareWheel),
 		paint: 0
 	}>>
 
@@ -29,7 +29,7 @@
 	}>>
 
 	<<set $makeMats to false>>
-<</if>>
+/*<</if>>*/
 
 <<if $roomPlan.length > 0>>
 	<<set _nextroom to $roomPlan[0]>>
