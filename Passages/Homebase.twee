@@ -12,9 +12,10 @@ body {
     background-color: transparent;
 }
 </style>
-<<if $firstArival == false>>You read, “Storage Closet,” as you enter a darkened closet that sits at the end of the hall. This is what appears to be your home for your duration of your time here. It looks to be empty for the most part, but there sat a few extra tables folded up against the wall, a stack of worn out chairs that looked to have been there for quite some time, and a book of some sort on the floor off to the side.
+<<if $firstArival == false>>You read, “Storage Closet,” as you enter a darkened closet that sits at the end of the hall. This is what appears to be your home for your duration of your time here. It looks to be empty for the most part, but there sit a few extra tables folded up against the wall, a stack of worn out chairs that looked to have been there for quite some time, and a book of some sort on the floor off to the side.
 
- You take the book and look over it. What you thought was a book, was actually a diary. It was dusty, with a few bent pages, but looked unused. This could potentially come in handy. Maybe you could keep track of your weekly adventures here. You spend some time looking through the empty diary, you eventually settle in for the rest of the night and think of where to start your exploration tomorrow.
+ You take the book and look over it. What you thought was a book, is actually a diary. It is dusty, with a few bent pages, but looks unused. This could potentially come in handy. Maybe you could keep track of your weekly adventures here. You spend some time looking through the empty diary, you eventually settle in for the rest of the night and think of where to start your exploration tomorrow.
+
 <<else>>
 It's the end of the week and you’ve made it back to your little home base. Although it's quite vacant, you like it, it's become familiar and pleasant. As you settle into the dark room, you think of things you can choose to do for the rest of the night. You can check in to your diary, visit the chair guru or go right into your next week. 
 
