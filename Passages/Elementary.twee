@@ -1,35 +1,35 @@
 :: Elementary {"position":"1000,900"}
-/*<<if $makeMats == true>>*/
+<<if $makeMats == true>>
 		<<set $classroomMats to {
-		wood: random(1, $classroomMatsMax.wood),
-		plastic: 0,
-		spareWheel: 0,
-		paint: 0
+		wood: random($classroomMatsMax.wood),
+		plastic: random($classroomMatsMax.plastic),
+		spareWheel: random($classroomMatsMax.spareWheel),
+		paint: random($classroomMatsMax.paint)
 	}>>
 
 	<<set $cafeteriaMats to {
-		wood: 0,
-		plastic: random(1, $cafeteriaMatMax.plastic),
-		spareWheel: 0,
-		paint: 0
+		wood: random($cafeteriaMatMax.wood),
+		plastic: random($cafeteriaMatMax.plastic),
+		spareWheel: random($cafeteriaMatMax.spareWheel),
+		paint: random($cafeteriaMatMax.paint)
 	}>>
 
 	<<set $gymMats to {
-		wood: 0,
-		plastic: 0,
-		spareWheel: random(1, $gymMatMax.spareWheel),
-		paint: 0
+		wood: random($gymMatMax.wood),
+		plastic: random($gymMatMax.plastic),
+		spareWheel: random($gymMatMax.spareWheel),
+		paint: random($gymMatMax.paint)
 	}>>
 
 	<<set $artMats to {
-		wood: 0,
-		plastic: 0,
-		spareWheel: 0,
-		paint: random($artMatMax)
+		wood: random($artMatMax.wood),
+		plastic: random($artMatMax.plastic),
+		spareWheel: random($artMatMax.spareWheel),
+		paint: random($artMatMax.paint)
 	}>>
 
 	<<set $makeMats to false>>
-/*<</if>>*/
+<</if>>
 
 <<if $roomPlan.length > 0>>
 	<<set _nextroom to $roomPlan[0]>>

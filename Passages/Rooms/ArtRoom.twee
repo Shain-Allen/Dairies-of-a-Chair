@@ -16,10 +16,10 @@ current plan: $roomPlan
 current day: $currentDay
 <<silently>>
 <<set _foundMats to {
-  wood: random(1,$artMats.wood),
-  plastic: random(1,$artMats.plastic),
-  spareWheel: random(1,$artMats.spareWheel),
-  paint: random(1,$artMats.paint)
+  wood: random($artMats.wood),
+  plastic: random($artMats.plastic),
+  spareWheel: random($artMats.spareWheel),
+  paint: random($artMats.paint)
 }>>
 
 <<set $playerInv to {
