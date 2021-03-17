@@ -13,6 +13,8 @@ Where would you like to spend the week? (Pick up to three different rooms for th
 							<<set $roomPlan.push("Classroom")>>
 							<<set $roomTypes to $roomTypes + 1>>
 							<<audio "AffirmativeChairSqueak" play>>
+						<<else>>
+							<<audio "NegativeChairSqueak" play>>
 						<</if>>
 					<<else>>
 							<<audio "NegativeChairSqueak" play>>
@@ -29,6 +31,8 @@ Where would you like to spend the week? (Pick up to three different rooms for th
 							<<set $roomPlan.push("Cafeteria")>>
 							<<set $roomTypes to $roomTypes + 1>>
 							<<audio "AffirmativeChairSqueak" play>>
+						<<else>>
+							<<audio "NegativeChairSqueak" play>>
 						<</if>>
 					<<else>>
 							<<audio "NegativeChairSqueak" play>>
@@ -47,6 +51,8 @@ Where would you like to spend the week? (Pick up to three different rooms for th
 							<<set $roomPlan.push("Art Room")>>
 							<<set $roomTypes to $roomTypes + 1>>
 							<<audio "AffirmativeChairSqueak" play>>
+						<<else>>
+							<<audio "NegativeChairSqueak" play>>
 						<</if>> 
 					<<else>>
 							<<audio "NegativeChairSqueak" play>>
@@ -63,6 +69,8 @@ Where would you like to spend the week? (Pick up to three different rooms for th
 							<<set $roomPlan.push("Gym")>>
 							<<set $roomTypes to $roomTypes + 1>>
 							<<audio "AffirmativeChairSqueak" play>>
+						<<else>>
+							<<audio "NegativeChairSqueak" play>>
 						<</if>>
 					<<else>>
 							<<audio "NegativeChairSqueak" play>>
