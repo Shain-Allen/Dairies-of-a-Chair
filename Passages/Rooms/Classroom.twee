@@ -36,6 +36,13 @@ current day: $currentDay
   spareWheel: $classroomMats.spareWheel - _foundMats.spareWheel,
   paint: $classroomMats.paint - _foundMats.paint
 }>>
+
+<<set $weekhual to {
+  wood: $weekhual.wood + _foundMats.wood,
+  plastic: $weekhual.plastic + _foundMats.plastic,
+  spareWheel: $weekhual.spareWheel + _foundMats.spareWheel,
+  paint: $weekhual.spareWheel + _foundMats.spareWheel
+}>>
 <</silently>>
 found wood: _foundMats.wood
 found plastic: _foundMats.plastic
