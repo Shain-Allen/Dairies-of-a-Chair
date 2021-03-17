@@ -11,4 +11,4 @@ This is a lot of information, and you’re a bit confused.
 
 With that he sends you on your way.
 
-<<button [[Get going|Homebase]]>><</button>>
+<<button [[Get going|Homebase]]>><<audio "AffirmativeChairSqueak" play>><</button>>

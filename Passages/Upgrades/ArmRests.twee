@@ -1,8 +1,8 @@
 :: Arm Rests {"position":"1300,1000"}
 Want to look your best? Want to feel your best? You need a pair of arm rests. These slick babies give you that lean mean fighting machine look! They say, ‘look at me!’ What better way to make someone stay a while then giving them a relaxing rest, in a good lookin chair! It's the ‘it’ factor. 
 
-<<if $hasArmRests == false>><<button [[buy Arm Rests|UpgradeCenter]]>><<set $hasArmRests to true>><</button>>
+<<if $hasArmRests == false>><<button [[buy Arm Rests|UpgradeCenter]]>><<audio "AffirmativeChairSqueak" play>><<set $hasArmRests to true>><</button>>
 <<else>> you already have Arm Rests, what are you doing here?
 <</if>>
 
-<<button [[Go back|UpgradeCenter]]>><</button>>
+<<button [[Go back|UpgradeCenter]]>><<audio "AffirmativeChairSqueak" play>><</button>>

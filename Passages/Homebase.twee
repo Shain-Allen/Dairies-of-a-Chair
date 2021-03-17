@@ -24,9 +24,9 @@ What would you like to do?
 <<nobr>>
 	<div class = "grid-container">
 		<<if $firstArival == true>>
-		<div class = "grid-item"> <<button [[Read diary|Diary]]>><</button>> </div>
-		<div class = "grid-item"> <<button [[Visit chair Guru|GurusUpgrades]]>><</button>> </div>
+		<div class = "grid-item"> <<button [[Read diary|Diary]]>><<audio "AffirmativeChairSqueak" play>><</button>> </div>
+		<div class = "grid-item"> <<button [[Visit chair Guru|GurusUpgrades]]>><<audio "AffirmativeChairSqueak" play>><</button>> </div>
 		<</if>>
-		<div class = "grid-item"> <<button [[go into the next week|Week Planner]]>><</button>> </div>
+		<div class = "grid-item"> <<button [[go into the next week|Week Planner]]>><<audio "AffirmativeChairSqueak" play>><</button>> </div>
 	</div>
 <</nobr>>
