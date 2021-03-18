@@ -12,9 +12,9 @@ body {
     background-color: transparent;
 }
 </style>
-you are in the Classroom
-current plan: $roomPlan
-current day: $currentDay
+You are in the Classroom
+Current plan: $roomPlan
+Current day: $currentDay
 <<silently>>
 <<set _foundMats to {
   wood: random(1,$classroomMats.wood),
@@ -37,9 +37,9 @@ current day: $currentDay
   paint: $classroomMats.paint - _foundMats.paint
 }>>
 <</silently>>
-found wood: _foundMats.wood
-found plastic: _foundMats.plastic
-found spareWheel: _foundMats.spareWheel
-found paint: _foundMats.paint
+Found wood: _foundMats.wood
+Found plastic: _foundMats.plastic
+Found spareWheel: _foundMats.spareWheel
+Found paint: _foundMats.paint
 <<set $dayIndex = $dayIndex + 1>>
 <<timed 4s>><<goto [[Elementary]]>><</timed>>

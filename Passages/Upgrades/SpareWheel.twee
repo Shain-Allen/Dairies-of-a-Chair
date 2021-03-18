@@ -2,7 +2,7 @@
 Glide your way to being the best, but not without these bad boys. We got two, four, six, you name it! Trade in some wheels and we’ll trade you some smooth sailing here on out. Might sound like some work to put in to get these shiny pieces of metal, but the humans LOVE them. They would be worth every item!
 
 <<if $hasWheels == false>><<button [[Buy Wheels|UpgradeCenter]]>><<set $hasWheels to true>><</button>>
-<<else>>you already have Wheels, What are you doing here?
+<<else>>you already have wheels, What are you doing here?
 <</if>>
 
 <<button [[Go back|UpgradeCenter]]>><</button>>

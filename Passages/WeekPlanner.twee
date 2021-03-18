@@ -1,5 +1,5 @@
 :: Week Planner {"position":"1000,600"}
-Where would you like to spend the week? (Pick up to three different rooms for the 5 days of the school week)
+Where would you like to spend the week? (Pick up to three different rooms for the 5 days of the school week
 <<nobr>>
 	<div class = "grid-container">
 		<div class = "grid-item">
@@ -60,7 +60,7 @@ Where would you like to spend the week? (Pick up to three different rooms for th
 current plan for the week (monday -> friday): $roomPlan
 
 <div class = "grid-item">
-	<<button [[Remove last Location|Week Planner]]>> 
+	<<button [[Remove last location|Week Planner]]>> 
 		<<if $roomPlan.count($roomPlan.pop()) == 0 && $roomTypes != 0>>
 			<<set $roomTypes to $roomTypes - 1>>
 		<</if>>
