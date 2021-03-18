@@ -17,10 +17,10 @@ Current plan: $roomPlan
 Current day: $currentDay
 <<silently>>
 <<set _foundMats to {
-  wood: random(1,$cafeteriaMats.wood),
-  plastic: random(1,$cafeteriaMats.plastic),
-  spareWheel: random(1,$cafeteriaMats.spareWheel),
-  paint: random(1,$cafeteriaMats.paint)
+  wood: random($cafeteriaMats.wood),
+  plastic: random($cafeteriaMats.plastic),
+  spareWheel: random($cafeteriaMats.spareWheel),
+  paint: random($cafeteriaMats.paint)
 }>>
 
 <<set $playerInv to {
@@ -35,6 +35,13 @@ Current day: $currentDay
   plastic: $cafeteriaMats.plastic - _foundMats.plastic,
   spareWheel: $cafeteriaMats.spareWheel - _foundMats.spareWheel,
   paint: $cafeteriaMats.paint - _foundMats.paint
+}>>
+
+<<set $weekhual to {
+  wood: $weekhual.wood + _foundMats.wood,
+  plastic: $weekhual.plastic + _foundMats.plastic,
+  spareWheel: $weekhual.spareWheel + _foundMats.spareWheel,
+  paint: $weekhual.spareWheel + _foundMats.spareWheel
 }>>
 <</silently>>
 Found wood: _foundMats.wood

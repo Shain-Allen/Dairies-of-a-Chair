@@ -12,9 +12,9 @@ He presents to you the upgrades that are potentially available to you.
 
 <<nobr>>
 	<div class = "grid-container">
-		<div class = "grid-item"> <<button [[Legs]]>><</button>> </div>
-		<div class = "grid-item"> <<button [[Spare Wheel]]>><</button>> </div>
-		<div class = "grid-item"> <<button [[Arm Rests]]>><</button>> </div>
+		<div class = "grid-item"> <<button [[Legs]]>><<audio "AffirmativeChairSqueak" play>><</button>> </div>
+		<div class = "grid-item"> <<button [[Spare Wheel]]>><<audio "AffirmativeChairSqueak" play>><</button>> </div>
+		<div class = "grid-item"> <<button [[Arm Rests]]>><<audio "AffirmativeChairSqueak" play>><</button>> </div>
 	</div>
 <</nobr>>
 

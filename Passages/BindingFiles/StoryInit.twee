@@ -49,7 +49,7 @@
 //resorces
     //max to find
         <<set $classroomMatMax to {
-            wood: 10,
+            wood: 50,
             plastic: 0,
             spareWheel: 0,
             paint: 0
@@ -57,7 +57,7 @@
 
         <<set $cafeteriaMatMax to {
             wood: 0,
-            plastic: 10,
+            plastic: 50,
             spareWheel: 0,
             paint: 0
         }>>
@@ -65,7 +65,7 @@
         <<set $gymMatMax to {
             wood: 0,
             plastic: 0,
-            spareWheel: 4,
+            spareWheel: 50,
             paint: 0
         }>>
 
@@ -108,3 +108,4 @@
 //audio
     <<cacheaudio "mainbackground" "Sounds/BackgroundMusic.wav">>
     <<cacheaudio "AffirmativeChairSqueak" "Sounds/AffirmativeChairSqueak.wav">>
+    <<cacheaudio "NegativeChairSqueak" "Sounds/NegativeChairSqueak.wav">>

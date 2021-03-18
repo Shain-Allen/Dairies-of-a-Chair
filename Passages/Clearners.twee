@@ -10,4 +10,4 @@ Sifting through your items, you find it's a difficult decision as everything her
 Just as the guru said, only a few minutes pass, and next thing you know you feel good as new. You know that this will benefit you in the long run. 
 
 
-<<button [[Go back|GurusUpgrades]]>><</button>>
+<<button [[Go back|GurusUpgrades]]>><<audio "AffirmativeChairSqueak" play>><</button>>

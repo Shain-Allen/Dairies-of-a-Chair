@@ -6,8 +6,8 @@
 
 <<nobr>>
 	<div class = "grid-container">
-		<div class = "grid-item"><<button [[Upgrades|UpgradeCenter]]>><</button>></div>
-		<div class = "grid-item"><<button [[Get cleaning|Clearners]]>><</button>></div>
-		<div class = "grid-item"><<button [[Go back the storage closet|Homebase]]>><</button>></div>
+		<div class = "grid-item"><<button [[Upgrades|UpgradeCenter]]>><<audio "AffirmativeChairSqueak" play>><</button>></div>
+		<div class = "grid-item"><<button [[Get cleaning|Clearners]]>><<audio "AffirmativeChairSqueak" play>><</button>></div>
+		<div class = "grid-item"><<button [[Go back the storage closet|Homebase]]>><<audio "AffirmativeChairSqueak" play>><</button>></div>
 	</div> 
 <</nobr>> 

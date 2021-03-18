@@ -8,10 +8,16 @@ Where would you like to spend the week? (Pick up to three different rooms for th
 					<<if $roomPlan.length < $maxRooms >> 
 						<<if $roomPlan.indexOf("Classroom") != -1>>
 							<<set $roomPlan.push("Classroom")>>
+							<<audio "AffirmativeChairSqueak" play>>
 						<<elseif $roomPlan.length == 0 || $roomTypes < $typeMax>>>
 							<<set $roomPlan.push("Classroom")>>
 							<<set $roomTypes to $roomTypes + 1>>
-						<</if>> 
+							<<audio "AffirmativeChairSqueak" play>>
+						<<else>>
+							<<audio "NegativeChairSqueak" play>>
+						<</if>>
+					<<else>>
+							<<audio "NegativeChairSqueak" play>>
 					<</if>> 
 				<</silently>>
 			<</button>>
@@ -20,10 +26,16 @@ Where would you like to spend the week? (Pick up to three different rooms for th
 					<<if $roomPlan.length < $maxRooms >> 
 						<<if $roomPlan.indexOf("Cafeteria") != -1>>
 							<<set $roomPlan.push("Cafeteria")>>
+							<<audio "AffirmativeChairSqueak" play>>
 						<<elseif $roomPlan.length == 0 || $roomTypes < $typeMax>>>
 							<<set $roomPlan.push("Cafeteria")>>
 							<<set $roomTypes to $roomTypes + 1>>
-						<</if>> 
+							<<audio "AffirmativeChairSqueak" play>>
+						<<else>>
+							<<audio "NegativeChairSqueak" play>>
+						<</if>>
+					<<else>>
+							<<audio "NegativeChairSqueak" play>>
 					<</if>>  
 				<</silently>>
 			<</button>> 
@@ -34,10 +46,16 @@ Where would you like to spend the week? (Pick up to three different rooms for th
 					<<if $roomPlan.length < $maxRooms >> 
 						<<if $roomPlan.indexOf("Art Room") != -1>>
 							<<set $roomPlan.push("Art Room")>>
+							<<audio "AffirmativeChairSqueak" play>>
 						<<elseif $roomPlan.length == 0 || $roomTypes < $typeMax>>>
 							<<set $roomPlan.push("Art Room")>>
 							<<set $roomTypes to $roomTypes + 1>>
+							<<audio "AffirmativeChairSqueak" play>>
+						<<else>>
+							<<audio "NegativeChairSqueak" play>>
 						<</if>> 
+					<<else>>
+							<<audio "NegativeChairSqueak" play>>
 					<</if>>
 				<</silently>>
 			<</button>>
@@ -46,10 +64,16 @@ Where would you like to spend the week? (Pick up to three different rooms for th
 					<<if $roomPlan.length < $maxRooms >> 
 						<<if $roomPlan.indexOf("Gym") != -1>>
 							<<set $roomPlan.push("Gym")>>
+							<<audio "AffirmativeChairSqueak" play>>
 						<<elseif $roomPlan.length == 0 || $roomTypes < $typeMax>>>
 							<<set $roomPlan.push("Gym")>>
 							<<set $roomTypes to $roomTypes + 1>>
-						<</if>> 
+							<<audio "AffirmativeChairSqueak" play>>
+						<<else>>
+							<<audio "NegativeChairSqueak" play>>
+						<</if>>
+					<<else>>
+							<<audio "NegativeChairSqueak" play>>
 					<</if>>
 				<</silently>>
 			<</button>> 
@@ -64,6 +88,7 @@ current plan for the week (monday -> friday): $roomPlan
 		<<if $roomPlan.count($roomPlan.pop()) == 0 && $roomTypes != 0>>
 			<<set $roomTypes to $roomTypes - 1>>
 		<</if>>
+		<<audio "NegativeChairSqueak" play>>
 	<</button>>
 </div> 
 <<button [[Back to base|Homebase]]>> <<set $roomPlan to []>> <</button>>
