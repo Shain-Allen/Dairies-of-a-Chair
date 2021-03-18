@@ -33,8 +33,7 @@
 
 <<set $newEntry to new DiarryEntry({
 	playerText : "text",
-	gatheredItems: $weekhual,
-	roomsVisted: $roomPlan
+	gatheredItems: $weekhual
 })>>
 
 <<if $roomPlan.length > 0>>

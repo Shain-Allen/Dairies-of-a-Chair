@@ -1,5 +1,5 @@
 window.DiarryEntry = function (playerText, gatheredItems, roomsVisted) {
-    this.playerText = playerText | "";
+    this.playerText = playerText | "text";
     this.gatheredItems = gatheredItems;
     this.roomsVisted = roomsVisted;
 };

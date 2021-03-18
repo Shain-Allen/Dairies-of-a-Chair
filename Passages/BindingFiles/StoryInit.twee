@@ -106,7 +106,7 @@
         }>>
 
 //diary
-    <<set $diary>>
+    <<set $diary to []>>
 
 //audio
     <<cacheaudio "mainbackground" "Sounds/BackgroundMusic.wav">>
