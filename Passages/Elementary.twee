@@ -31,6 +31,12 @@
 	<<set $makeMats to false>>
 <</if>>
 
+<<set $newEntry to new DiarryEntry({
+	playerText : "text",
+	gatheredItems: $weekhual,
+	roomsVisted: $roomPlan
+})>>
+
 <<if $roomPlan.length > 0>>
 	<<set _nextroom to $roomPlan[0]>>
 	<<set $roomPlan.shift()>>
@@ -43,7 +49,8 @@
 <<else>>	
 	<<set dayIndex to 5>>
 	<<set $currentDay to $daysOfWeek[$dayIndex]>>
-	<<goto [[GurusUpgrades]]>>
+	<<set $newEntry.gatheredItems to $weekhual>>
+	<<goto [[diarryEntry]]>>
 <</if>>
 
 <<set $firstArival to true>>

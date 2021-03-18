@@ -1,4 +1,15 @@
 :: Diary {"position":"1400,400"}
-WIP
+Dear Diary,
 
+Today I went to the $diary[0].roomsVisted room
+
+$diary[0].playerText
+
+I also managed to scrounge up some more items,
+
+$diary[0].gatheredItems
+
+Hope I can find more items and upgrade myself and have people be excited to sit on me!
+
+$name
 <<button [[Go back|Homebase]]>><</button>>

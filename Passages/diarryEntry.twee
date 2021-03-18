@@ -1,0 +1,5 @@
+:: diarryEntry
+as you end the week you think that you should write down your experences
+<<textarea $newEntry.playerText "put diary Entry now">>
+
+<<button [[Gurus upgrades|GurusUpgrades]]>>$diary.push($newEntry)<</button>>

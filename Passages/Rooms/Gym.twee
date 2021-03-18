@@ -43,6 +43,8 @@ Current day: $currentDay
   spareWheel: $weekhual.spareWheel + _foundMats.spareWheel,
   paint: $weekhual.spareWheel + _foundMats.spareWheel
 }>>
+
+$newEntry.roomsVisted.push($currentDay)
 <</silently>>
 Found wood: _foundMats.wood
 Found plastic: _foundMats.plastic

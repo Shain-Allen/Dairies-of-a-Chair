@@ -105,6 +105,9 @@
             paint: 0
         }>>
 
+//diary
+    <<set $diary>>
+
 //audio
     <<cacheaudio "mainbackground" "Sounds/BackgroundMusic.wav">>
     <<cacheaudio "AffirmativeChairSqueak" "Sounds/AffirmativeChairSqueak.wav">>
