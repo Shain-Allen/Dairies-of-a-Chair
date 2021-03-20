@@ -1,5 +1,5 @@
 :: diarryEntry
-As you end the week you think that you should write down your experences
+As you end the week you think that you should write down your experiences.
 /*<<set _newText to "text">>*/
 <<textarea "$newEntry.playerText" "">>
 /*<<set $newEntry.playerText to _newText>>*/
