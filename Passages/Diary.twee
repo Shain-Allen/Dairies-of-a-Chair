@@ -7,10 +7,10 @@ $diary[0].playerText
 
 I also managed to scrounge up some more items,
 
-$diary[0].gatheredItems.wood
-$diary[0].gatheredItems.plastic
-$diary[0].gatheredItems.spareWheel
-$diary[0].gatheredItems.paint
+$diary[0].gatheredItems.wood Wood pieces
+$diary[0].gatheredItems.plastic Plastic pieces
+$diary[0].gatheredItems.spareWheel Spare wheels
+$diary[0].gatheredItems.paint Paints
 
 Hope I can find more items and upgrade myself and have people be excited to sit on me!
 
