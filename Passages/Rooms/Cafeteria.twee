@@ -48,7 +48,7 @@ Current day: $currentDay
 <</silently>>
 Found wood: _foundMats.wood
 Found plastic: _foundMats.plastic
-Found spareWheel: _foundMats.spareWheel
+Found spare wheel: _foundMats.spareWheel
 Found paint: _foundMats.paint
 <<set $dayIndex = $dayIndex + 1>>
 <<timed 4s>><<goto [[Elementary]]>><</timed>>
