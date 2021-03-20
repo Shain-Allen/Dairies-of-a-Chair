@@ -96,4 +96,5 @@ Current plan for the week (Monday -> Friday): $roomPlan
 	<<silently>>
 		<<set $dayIndex to 0>>
 		<<set $makeMats to true>>
+		<<set $makeEntry to true>>
 	<</silently>><</button>></div><</if>>

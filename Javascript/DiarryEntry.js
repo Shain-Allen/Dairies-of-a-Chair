@@ -1,7 +1,7 @@
 window.DiarryEntry = function (playerText, gatheredItems, roomsVisted) {
     this.playerText = playerText | "text";
     this.gatheredItems = gatheredItems;
-    this.roomsVisted = roomsVisted;
+    this.roomsVisted = roomsVisted | [];
 };
 
 DiarryEntry.prototype._init = function (obj) {
