@@ -1,4 +1,17 @@
 :: GurusUpgrades {"position":"1400,600"}
+<style>
+html { 
+  background: url(ENVIORNMENT/JanitorsCloset.png) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body { 
+    background-color: transparent;
+}
+</style>
 <<if $vistedGuru == false>>As you make your way into the janitors closet you find to your surprise the chair guru is awake and humming a little song to himself. 
 
 “Ahhhhh, welcome back young one. You’ve managed to persevere through the week. You look a little scuffed up. Would you like any upgrades? Maybe a scrub down? Can’t really let you leave here lookin like that.”
