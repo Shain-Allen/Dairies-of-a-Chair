@@ -1,4 +1,4 @@
-:: StoryInit {"position":"500,0"}
+:: StoryInit {"position":"800,0"}
 //player variables
     <<set $name to "string">>
     <<set $durability to 100>>
