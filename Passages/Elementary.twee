@@ -43,7 +43,6 @@
 	<<set $roomPlan.shift()>>
 	<<set $newEntry.roomsVisted.push(_nextroom)>>
 	<<set $currentDay to $daysOfWeek[$dayIndex]>>
-	<<audio "SchoolBell" play>>
 	<<goto _nextroom>>
 <<elseif $roomPlan.length == 0 && $vistedGuru == true>>
 	<<set dayIndex to 5>>
