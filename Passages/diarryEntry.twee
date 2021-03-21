@@ -1,6 +1,10 @@
+<<<<<<< HEAD
+:: diarryEntry {"position":"1200,800"}
+As you end the week you think that you should write down your experences
+=======
 :: diarryEntry
 As you end the week you think that you should write down your experiences.
 /*<<set _newText to "text">>*/
+>>>>>>> 5c084868b31d35a12e1bb70f0b7c0713b3620376
 <<textarea "$newEntry.playerText" "">>
-/*<<set $newEntry.playerText to _newText>>*/
 <<button [[Gurus upgrades|GurusUpgrades]]>><<set $diary.push($newEntry)>><</button>>
