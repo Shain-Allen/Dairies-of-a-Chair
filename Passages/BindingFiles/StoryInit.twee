@@ -112,3 +112,4 @@
     <<cacheaudio "mainbackground" "Sounds/BackgroundMusic.wav">>
     <<cacheaudio "AffirmativeChairSqueak" "Sounds/AffirmativeChairSqueak.wav">>
     <<cacheaudio "NegativeChairSqueak" "Sounds/NegativeChairSqueak.wav">>
+    <<cacheaudio "SchoolBell" "Sounds/SchoolBell.wav">>
