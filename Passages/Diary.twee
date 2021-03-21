@@ -1,18 +1,18 @@
 :: Diary {"position":"1400,400"}
 <<if $diary.length != 0>>
-<<for _i = 0 ; _i < $diary.length ; _i = _i + 1>>
+<<for _i = 0 ; _i <= $diary.length ; _i = _i + 1>>
 Dear Diary,
 
-Today I went to the $diary[0].roomsVisted.
+Today I went to the $diary[_i].roomsVisted.
 
-$diary[0].playerText
+$diary[_i].playerText
 
 I also managed to scrounge up some more items,
 
-$diary[0].gatheredItems.wood Wood pieces
-$diary[0].gatheredItems.plastic Plastic pieces
-$diary[0].gatheredItems.spareWheel Spare wheels
-$diary[0].gatheredItems.paint Paints
+$diary[_i].gatheredItems.wood Wood pieces
+$diary[_i].gatheredItems.plastic Plastic pieces
+$diary[_i].gatheredItems.spareWheel Spare wheels
+$diary[_i].gatheredItems.paint Paints
 
 Hope I can find more items and upgrade myself and have people be excited to sit on me!
 
