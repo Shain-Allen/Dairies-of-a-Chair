@@ -30,7 +30,7 @@ Current day: $currentDay
   paint: $playerInv.paint + _foundMats.paint
 }>>
 
-<<set $artMats to {
+<<set $classroomMats to {
   wood: $classroomMats.wood - _foundMats.wood,
   plastic: $classroomMats.plastic - _foundMats.plastic,
   spareWheel: $classroomMats.spareWheel - _foundMats.spareWheel,
