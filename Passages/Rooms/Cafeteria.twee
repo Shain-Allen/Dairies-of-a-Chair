@@ -15,7 +15,6 @@ body {
 You are in the Cafeteria
 Current plan: $roomPlan
 Current day: $currentDay
-<<audio "SchoolBell" play>>
 <<silently>>
 <<set _foundMats to {
   wood: random($cafeteriaMats.wood),

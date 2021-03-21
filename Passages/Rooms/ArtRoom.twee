@@ -14,7 +14,6 @@
 You are in the art room
 Current plan: $roomPlan
 Current day: $currentDay
-<<audio "SchoolBell" play>>
 <<silently>>
 <<set _foundMats to {
   wood: random($artMats.wood),

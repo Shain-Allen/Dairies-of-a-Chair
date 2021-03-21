@@ -15,7 +15,6 @@ body {
 You are in the Gym
 Current plan: $roomPlan
 Current day: $currentDay
-<<audio "SchoolBell" play>>
 <<silently>>
 <<set _foundMats to {
   wood: random($gymMats.wood),
