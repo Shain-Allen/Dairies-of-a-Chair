@@ -40,7 +40,7 @@ Current day: $currentDay
   wood: $weekhual.wood + _foundMats.wood,
   plastic: $weekhual.plastic + _foundMats.plastic,
   spareWheel: $weekhual.spareWheel + _foundMats.spareWheel,
-  paint: $weekhual.spareWheel + _foundMats.spareWheel
+  paint: $weekhual.paint + _foundMats.paint
 }>>
 
 /*$newEntry.roomsVisted.push($currentDay)*/
