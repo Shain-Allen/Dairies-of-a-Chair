@@ -12,6 +12,7 @@ body {
     background-color: transparent;
 }
 </style>
+<div style="margin: 0px 45% 0px 0px; justify-conent: left;">
 The guru looks at you and waits for you to present the resources you’ve gathered from the week. 
 
 “Well, whatcha got for me?” He waits in a puzzle, staring you down.
@@ -35,4 +36,4 @@ He presents to you the upgrades that are potentially available to you.
 	</div>
 <</nobr>>
 
-<<button [[Gurus upgrades|GurusUpgrades]] >><</button>> 
+<<button [[Gurus upgrades|GurusUpgrades]] >><</button>> </div>
