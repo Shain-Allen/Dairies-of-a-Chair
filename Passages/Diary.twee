@@ -1,8 +1,7 @@
 :: Diary {"position":"1400,400"}
 <<if $diary.length != 0>>
-<<for _i = 0 ; _i <= $diary.length ; _i = _i + 1>>
 Dear Diary,
-
+<<set _i to $diary.length - 1>>
 Today I went to the $diary[_i].roomsVisted.
 
 $diary[_i].playerText
@@ -17,6 +16,5 @@ $diary[_i].gatheredItems.paint Paints
 Hope I can find more items and upgrade myself and have people be excited to sit on me!
 
 $name
-<</for>>
 <</if>>
 <<button [[Go back|Homebase]]>><</button>>
