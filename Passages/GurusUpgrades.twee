@@ -11,12 +11,14 @@ html {
 body { 
     background-color: transparent;
 }
-</style><div style="margin: 0px 45% 0px 0px; justify-conent: left;">
+</style>
 <<if $vistedGuru == false>>As you make your way into the janitors closet you find to your surprise the chair guru is awake and humming a little song to himself. 
 
 “Ahhhhh, welcome back young one. You’ve managed to persevere through the week. You look a little scuffed up. Would you like any upgrades? Maybe a scrub down? Can’t really let you leave here lookin like that.”
-<<set $vistedGuru to true>><<else>>
+<<set $vistedGuru to true>>
+This next week has finally passed. Every week is feeling exhausting to come out of, but you try to feel accomplished in what you manage to find. You enter the chair gurus premise and he is snoozing like the first time you found him. You poke the chair guru. He stirs abruptly and he startles you once again like the first time. 
 
+"You always manage to be finding me like this. I just can't help it kiddo, give me a break. Anyways welcome welcome. Are you look for more upgrades today? Another cleaning? You name it, I got it ready for ya."
 <</if>>
 
 <<nobr>>
@@ -25,4 +27,4 @@ body {
 		<div class = "grid-item"><<button [[Get cleaning|Clearners]]>><<audio "AffirmativeChairSqueak" play>><</button>></div>
 		<div class = "grid-item"><<button [[Go back the storage closet|Homebase]]>><<audio "AffirmativeChairSqueak" play>><</button>></div>
 	</div> 
-<</nobr>> </div>
+<</nobr>> 
