@@ -23,7 +23,7 @@
     }>>
 
 //week stuff
-    <<set $daysOfWeek to new Array("monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday")>>
+    <<set $daysOfWeek to new Array("Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday")>>
     <<set $dayIndex to 0>>
     <<set $currentDay to $daysOfWeek[$dayIndex]>>
 
