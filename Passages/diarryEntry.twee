@@ -1,4 +1,4 @@
 :: diarryEntry {"position":"1200,800"}
-As you end the week you think that you should write down your experences
+As you end the week you think that you should write down your experiences.
 <<textarea "$newEntry.playerText" "">>
 <<button [[Gurus upgrades|GurusUpgrades]]>><<set $diary.push($newEntry)>><</button>>
